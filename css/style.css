@@ -1,0 +1,28 @@
+.tamanyo-imagen{
+    max-height: 80vh;
+    width: 100vw;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+#columna1-fila1{
+    padding: 10vh;
+}
+
+.tamanyo-container{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+#logo-mejorset{
+    max-width: 30%;
+}
+
+#navbarDropdown{
+    background: none; 
+    border: none;
+}
+
+.clase-footer {
+    margin-top: 0px !important;
+}
