@@ -31,7 +31,7 @@
                           <a class="dropdown-item" href="tarifas.html">Tarifas</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Instalaciones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="instalaciones.html">Instalaciones</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Tienda</a></li>
                 </ul>
             </div>
@@ -75,12 +75,12 @@
             </div>
             <div class="mb-3">
                 <label for="tarifa" class="form-label">Selecciona una Tarifa</label>
-                <select class="form-select" id="tarifa" required>
-                    <option value="1h">1h a la semana: 39 Euros/Mes</option>
-                    <option value="1h30m">1h 30 min a la semana: 65 Euros/Mes</option>
-                    <option value="2h">2h a la semana: 70 Euros/Mes</option>
-                    <option value="3h">3h a la semana: 75 Euros/Mes</option>
-                </select>
+                <div class="form-select" role="group" aria-label="Tarifa" id="tarifa">
+                    <button type="button" class="btn btn-primary">1 h/Semana</button>
+                    <button type="button" class="btn btn-primary">1'5 h/Semana</button>
+                    <button type="button" class="btn btn-primary">2 h/Semana</button>
+                    <button type="button" class="btn btn-primary">3 h/Semana</button>
+                  </div>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
