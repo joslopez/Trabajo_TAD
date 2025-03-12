@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="images/icono.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/icono.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                BLACK PADEL
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="btn btn-secondary dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Escuela
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="equipo.html">Monitores</a>
+                          <a class="dropdown-item" href="tarifas.html">Tarifas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Instalaciones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Tienda</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <p class="text-center mt-4 p-4 fs-1 text-uppercase fw-bold">tarifas</p>
+
+
+    <div class="container-fluid w-100">
+        <div class="row pl-0 pr-0">
+            <div class="col-md-6 py-4" id="columna1-fila1">
+                <h3>Listado de Tarifas</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">1h a la semana: 39 Euros/Mes</li>
+                    <li class="list-group-item">1h 30 min a la semana: 65 Euros/Mes</li>
+                    <li class="list-group-item">2h a la semana: 70 Euros/Mes</li>
+                    <li class="list-group-item">3h a la semana: 75 Euros/Mes</li>
+                </ul>
+            </div>
+            <div class="col-md-6 py4 pl-0 pr-0 tamanyo-container">
+                <img src="images/clases-padel.png" class="w-100 h-75 tamanyo-imagen">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h3 class="text-center">Apúntate a las Clases</h3>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" required>
+            </div>
+            <div class="mb-3">
+                <label for="tarifa" class="form-label">Selecciona una Tarifa</label>
+                <select class="form-select" id="tarifa" required>
+                    <option value="1h">1h a la semana: 39 Euros/Mes</option>
+                    <option value="1h30m">1h 30 min a la semana: 65 Euros/Mes</option>
+                    <option value="2h">2h a la semana: 70 Euros/Mes</option>
+                    <option value="3h">3h a la semana: 75 Euros/Mes</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <div class="m-5">PREGUNTAS FRECUENTES</div>
+
+    <div class="accordion m-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              ¿Como puedo realizar mis pagos?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Los pagos se realizaran vía <strong>Transferencia Bancaria</strong> o en la propia <strong>Tienda</strong> del club
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Que pasa si no puedo asistir a una clase?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Si no puedes asistir a una clase, deberás avisar con al menos <strong>24 horas de antelación</strong> para poder recuperarla
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Cuantos alumnos hay por clase?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                El número de alumnos por clase es de <strong>3-4 personas</strong> para garantizar una atención personalizada
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                ¿Como se medirán los niveles?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                    Los niveles se medirán mediante una <strong>prueba de nivel</strong> que se realizará al principio de cada curso, o si ya ha iniciado, al principio de la primera clase
+              </div>
+            </div>
+          </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-4 clase-footer">
+        <p>Black Padel Sports & Food Center</p>
+        <p class="fw-light">Calle UPO Nº10 - <Email:upo>upo@upo.es</Email:upo> - Telefono: 600 200 100</p>
+        <p>&copy; 2025 BLACK PADEL - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
